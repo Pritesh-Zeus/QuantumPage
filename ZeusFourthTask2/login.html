@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div class="web">
+        <div class="header">
+            <div class="logo"><img src="icons\logo_used_in_header.svg" alt="Error">
+            </div>
+        </div>
+        <div class="big">
+            <div class="container">
+                <div class="heading">
+                    <a href=""><img src="icons\back.svg" alt=""></a>
+                    <p>Log in with Quantam</p>
+                </div>
+                <div class="form-sch">
+                    <form action="dashboardOne.html">
+                        <div class="sch">
+                            <input type="radio" name="school">
+                            <p> District</p>
+                            <input type="radio" name="school">
+                            <p> Independent School</p>
+                        </div>
+                        <div class="drop">
+                            <p id="para">State*</p>
+                            <select name="State*">
+                                <option value="Alabama">Alabama</option>
+                            </select>
+                        </div>
+                        <div class="drop">
+                            <p id="para">District*</p>
+                            <select name="District*">
+                                <option value="Alabama School District">Alabama School District</option>
+                            </select>
+                        </div>
+                        <div class="inp">
+                            <input type="text" placeholder="Username/Email ID*">
+
+                            <a href="">
+                                <p id="for"> FORGOT USERNAME?</p>
+                            </a>
+                        </div>
+                        <div class="inp">
+                            <input type="text" placeholder="Password*" id="myPassword">
+                            <img src="icons\preview.svg" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();" />
+                            <a href="">
+                                <p id="for"> FORGOT PASSWORD?</p>
+                            </a>
+                        </div>
+
+                        <div class="rem">
+                            <input type="checkbox" name="Remember Me" id=""><b> Remember Me</b>
+                        </div>
+                        <div class="butt">
+                            <input type="submit" value="Login" >
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="tags">
+            <p><a href="">About </a></p>
+            <p><a href="">Contact Us</a></p>
+        </div>
+        <div class="footer">
+            <img src="icons\logo_used_in_footer.svg" alt="">
+            <p>Copyright @2020-2021</p>
+            <p> Zeus Systems Pvt. Ltd.</p>
+            <p>All Rights reserved</p>
+        </div>
+    </div>
+</body>
+<script>
+    function mouseoverPass(obj) {
+    var obj = document.getElementById('myPassword');
+    obj.type = "text";
+  }
+  function mouseoutPass(obj) {
+    var obj = document.getElementById('myPassword');
+    obj.type = "password";
+  }
+</script>
+
+</html>
